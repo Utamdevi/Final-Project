@@ -22,21 +22,21 @@ A responsive, modern fitness website for "Fit Nation" built with HTML5, CSS3, Ja
 ## Screenshots
 
 1. **Homepage** (`index.html`):
-   ![Home](./Screenshots/Home.jpg)
+   ![Home](./Screenshots/127.0.0.1_5501_index.html.png)
 
 2. **About Us** (`about.html`):
-   ![About](./Screenshots/About.jpg)
+   ![About](./Screenshots/127.0.0.1_5501_about.html.png)
 
 3. **Services/Pricing** (`services.html`):
-   ![Services](./Screenshots/Services.jpg)
+   ![Services](./Screenshots/127.0.0.1_5501_services.html.png)
 
 4. **Classes** (`classes.html`):
 
    - **Dynamic class listings** from JavaScript array
    - **Search/Filter functionality** (All, Cardio, Strength, Flexibility, HIIT)
-     ![Classes](./Screenshots/classes.jpg)
+     ![Classes](./Screenshots/127.0.0.1_5501_classes.html.png)
 
 5. **Contact** (`contact.html`):
    - Location information
    - **Join Now form with validation**
-     ![Contact](./Screenshots/Contact.jpg)
+     ![Contact](./Screenshots/127.0.0.1_5501_contact.html.png)
