@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fit Nation | Classes - Schedule & Booking</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-dumbbell me-2 text-gradient"></i>
+          <span class="fit">FIT</span><span class="nation">NATION</span>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services & Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="classes.html">Classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a href="contact.html#join-form" class="btn btn-primary">
+                <i class="fas fa-fire me-2"></i>Join Now
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="text-white mb-3">Fitness Classes</h1>
+            <p class="lead text-light">
+              50+ weekly classes for all fitness levels
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="py-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <!-- Filter Buttons -->
+          <div class="col-lg-8 mb-3 mb-lg-0">
+            <div class="d-flex flex-wrap gap-2">
+              <button
+                class="btn btn-primary filter-btn active"
+                data-filter="all"
+              >
+                All Classes
+              </button>
+              <button class="btn btn-secondary filter-btn" data-filter="cardio">
+                Cardio
+              </button>
+              <button
+                class="btn btn-secondary filter-btn"
+                data-filter="strength"
+              >
+                Strength
+              </button>
+              <button
+                class="btn btn-secondary filter-btn"
+                data-filter="flexibility"
+              >
+                Flexibility
+              </button>
+              <button class="btn btn-secondary filter-btn" data-filter="hiit">
+                HIIT
+              </button>
+            </div>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="col-lg-4">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                id="searchInput"
+                placeholder="Search classes..."
+              />
+              <button class="btn btn-primary" type="button" id="searchBtn">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classes Grid -->
+    <section>
+      <div class="container">
+        <div class="row" id="classes-container">
+          <!-- Classes loaded via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Class Schedule -->
+    <section class="bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2>Weekly Schedule</h2>
+          <p class="text-muted">Plan your workouts in advance</p>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-striped table-hover">
+            <thead class="table-dark">
+              <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>6:00 AM</td>
+                <td><span class="badge bg-gradient">HIIT</span></td>
+                <td><span class="badge bg-success">Yoga</span></td>
+                <td><span class="badge bg-danger">Boxing</span></td>
+                <td><span class="badge bg-gradient">HIIT</span></td>
+                <td><span class="badge bg-warning">Pilates</span></td>
+                <td><span class="badge bg-info">Zumba</span></td>
+                <td><span class="badge bg-success">Yoga</span></td>
+              </tr>
+              <tr>
+                <td>8:00 AM</td>
+                <td><span class="badge bg-warning">Pilates</span></td>
+                <td><span class="badge bg-gradient">CrossFit</span></td>
+                <td><span class="badge bg-info">Zumba</span></td>
+                <td><span class="badge bg-success">Yoga</span></td>
+                <td><span class="badge bg-danger">Boxing</span></td>
+                <td><span class="badge bg-gradient">HIIT</span></td>
+                <td><span class="badge bg-info">Zumba</span></td>
+              </tr>
+              <tr>
+                <td>5:00 PM</td>
+                <td><span class="badge bg-danger">Boxing</span></td>
+                <td><span class="badge bg-info">Zumba</span></td>
+                <td><span class="badge bg-gradient">CrossFit</span></td>
+                <td><span class="badge bg-warning">Pilates</span></td>
+                <td><span class="badge bg-success">Yoga</span></td>
+                <td><span class="badge bg-gradient">HIIT</span></td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>7:00 PM</td>
+                <td><span class="badge bg-success">Yoga</span></td>
+                <td><span class="badge bg-warning">Pilates</span></td>
+                <td><span class="badge bg-danger">Boxing</span></td>
+                <td><span class="badge bg-gradient">CrossFit</span></td>
+                <td><span class="badge bg-info">Zumba</span></td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- Logo and Description -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="footer-logo mb-3">
+              <h3>
+                <span class="fit">FIT</span><span class="nation">NATION</span>
+              </h3>
+            </div>
+            <p class="mb-4">
+              LET'S BUILD & BURN TOGETHER! Join thousands transforming their
+              lives at Fit Nation.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <!-- Opening Hours -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5>Opening Hours</h5>
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2">
+                <strong>Monday - Friday:</strong> 5:00 AM - 11:00 PM
+              </li>
+              <li class="mb-2">
+                <strong>Saturday:</strong> 6:00 AM - 10:00 PM
+              </li>
+              <li class="mb-2"><strong>Sunday:</strong> 7:00 AM - 9:00 PM</li>
+              <li><strong>24/7 Access:</strong> Elite Members</li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="about.html">About Us</a></li>
+              <li class="mb-2">
+                <a href="services.html">Membership Plans</a>
+              </li>
+              <li class="mb-2">
+                <a href="classes.html">Class Schedule</a>
+              </li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="mt-4 mb-4" style="border-color: #444" />
+
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2024 Fit Nation. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>LET'S BUILD & BURN TOGETHER!</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Classes Data
+      const classesData = [
+        {
+          id: 1,
+          name: "Power Yoga",
+          category: "flexibility",
+          instructor: "Sarah Johnson",
+          duration: "60 min",
+          difficulty: "Intermediate",
+          description:
+            "Build strength and flexibility through dynamic poses and controlled breathing.",
+          image:
+            "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        },
+        {
+          id: 2,
+          name: "HIIT Blast",
+          category: "hiit",
+          instructor: "David Park",
+          duration: "45 min",
+          difficulty: "Advanced",
+          description:
+            "High-intensity intervals to maximize calorie burn and boost metabolism.",
+          image:
+            "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        },
+        {
+          id: 3,
+          name: "CrossFit",
+          category: "strength",
+          instructor: "Marcus Chen",
+          duration: "60 min",
+          difficulty: "Advanced",
+          description:
+            "Functional movements performed at high intensity for total body conditioning.",
+          image: "cross fit.avif",
+        },
+        {
+          id: 4,
+          name: "Zumba Dance",
+          category: "cardio",
+          instructor: "Elena Rodriguez",
+          duration: "55 min",
+          difficulty: "Beginner",
+          description:
+            "Latin-inspired dance workout that's fun, easy to follow, and burns calories.",
+          image:
+            "https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        },
+        {
+          id: 5,
+          name: "Boxing Fitness",
+          category: "cardio",
+          instructor: "Mike Tyson",
+          duration: "50 min",
+          difficulty: "Intermediate",
+          description:
+            "Learn boxing techniques while getting an intense full-body workout.",
+          image:
+            "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        },
+        {
+          id: 6,
+          name: "Pilates Reformer",
+          category: "flexibility",
+          instructor: "Lisa Wang",
+          duration: "60 min",
+          difficulty: "Intermediate",
+          description:
+            "Low-impact workout focusing on core strength, flexibility, and posture.",
+          image: "reformer.avif",
+        },
+        {
+          id: 7,
+          name: "Spin Cycle",
+          category: "cardio",
+          instructor: "David Park",
+          duration: "45 min",
+          difficulty: "All Levels",
+          description:
+            "Indoor cycling class with motivational music and varying intensity levels.",
+          image:
+            "https://images.unsplash.com/photo-1536922246289-88c42f957773?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+        },
+        {
+          id: 8,
+          name: "Strength Training",
+          category: "strength",
+          instructor: "Marcus Chen",
+          duration: "60 min",
+          difficulty: "Intermediate",
+          description:
+            "Build lean muscle mass using free weights and resistance machines.",
+          image: "strength.jpg",
+        },
+      ];
+
+      // Function to render classes
+      function renderClasses(classes = classesData) {
+        const container = document.getElementById("classes-container");
+        container.innerHTML = "";
+
+        if (classes.length === 0) {
+          container.innerHTML = `
+                    <div class="col-12 text-center py-5">
+                        <i class="fas fa-dumbbell fa-4x text-muted mb-3"></i>
+                        <h3>No classes found</h3>
+                        <p class="text-muted">Try a different search term or category</p>
+                    </div>
+                `;
+          return;
+        }
+
+        classes.forEach((cls) => {
+          const difficultyColors = {
+            Beginner: "success",
+            Intermediate: "warning",
+            Advanced: "danger",
+            "All Levels": "info",
+          };
+
+          const card = document.createElement("div");
+          card.className = "col-lg-3 col-md-6 mb-4";
+          card.innerHTML = `
+                    <div class="card h-100">
+                        <img src="${cls.image}" class="card-img-top" alt="${
+            cls.name
+          }" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title">${cls.name}</h5>
+                                <span class="badge bg-${
+                                  difficultyColors[cls.difficulty]
+                                }">${cls.difficulty}</span>
+                            </div>
+                            <p class="card-text text-muted">${
+                              cls.description
+                            }</p>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <small><i class="fas fa-user text-primary me-1"></i> ${
+                                      cls.instructor
+                                    }</small>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <small><i class="fas fa-clock text-primary me-1"></i> ${
+                                      cls.duration
+                                    }</small>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-secondary">${cls.category.toUpperCase()}</span>
+                                <button class="btn btn-sm btn-primary" onclick="bookClass(${
+                                  cls.id
+                                })">
+                                    <i class="fas fa-calendar-plus me-1"></i> Book
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+          container.appendChild(card);
+        });
+      }
+
+      // Filter and Search functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        renderClasses();
+
+        // Category filter buttons
+        document.querySelectorAll(".filter-btn").forEach((button) => {
+          button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            document.querySelectorAll(".filter-btn").forEach((btn) => {
+              btn.classList.remove("active");
+              btn.classList.remove("btn-primary");
+              btn.classList.add("btn-secondary");
+            });
+
+            // Add active class to clicked button
+            this.classList.add("active");
+            this.classList.remove("btn-secondary");
+            this.classList.add("btn-primary");
+
+            const category = this.getAttribute("data-filter");
+            filterClasses(category);
+          });
+        });
+
+        // Search functionality
+        document
+          .getElementById("searchBtn")
+          .addEventListener("click", performSearch);
+        document
+          .getElementById("searchInput")
+          .addEventListener("keyup", function (e) {
+            if (e.key === "Enter") {
+              performSearch();
+            }
+          });
+      });
+
+      function filterClasses(category) {
+        if (category === "all") {
+          renderClasses(classesData);
+        } else {
+          const filtered = classesData.filter(
+            (cls) => cls.category === category
+          );
+          renderClasses(filtered);
+        }
+      }
+
+      function performSearch() {
+        const searchTerm = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+        const filtered = classesData.filter(
+          (cls) =>
+            cls.name.toLowerCase().includes(searchTerm) ||
+            cls.description.toLowerCase().includes(searchTerm) ||
+            cls.instructor.toLowerCase().includes(searchTerm) ||
+            cls.category.toLowerCase().includes(searchTerm)
+        );
+        renderClasses(filtered);
+      }
+
+      function bookClass(classId) {
+        alert(`Booking class ID: ${classId}\nRedirecting to booking page...`);
+        // In a real app, you would redirect to a booking page
+      }
+
+      // Load header and footer
+      fetch("includes/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      fetch("includes/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

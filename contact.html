@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fit Nation | Contact Us - Get Started Today</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <i class="fas fa-dumbbell me-2 text-gradient"></i>
+          <span class="fit">FIT</span><span class="nation">NATION</span>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services & Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="classes.html">Classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a href="contact.html#join-form" class="btn btn-primary">
+                <i class="fas fa-fire me-2"></i>Join Now
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="bg-dark py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="text-white mb-3">Contact Us</h1>
+            <p class="lead text-light">
+              Ready to start your fitness journey? We're here to help!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Info & Form -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h2 class="mb-4">Visit Our Location</h2>
+
+            <!-- Map Placeholder -->
+            <div
+              id="map"
+              style="
+                height: 400px;
+                background: #f8f9fa;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 30px;
+                border: 2px solid #e9ecef;
+              "
+            >
+              <div class="text-center">
+                <i class="fas fa-map-marker-alt fa-3x text-gradient mb-3"></i>
+                <h4>Fit Nation Gym</h4>
+                <p class="text-muted">
+                  123 Fitness Street, Health City, HC 12345
+                </p>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="d-flex">
+                  <div class="me-3">
+                    <i class="fas fa-map-marker-alt fa-2x text-gradient"></i>
+                  </div>
+                  <div>
+                    <h5>Address</h5>
+                    <p class="text-muted">
+                      123 Fitness Street<br />Health City, HC 12345
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <div class="d-flex">
+                  <div class="me-3">
+                    <i class="fas fa-phone fa-2x text-gradient"></i>
+                  </div>
+                  <div>
+                    <h5>Phone</h5>
+                    <p class="text-muted">(555) 123-4567</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <div class="d-flex">
+                  <div class="me-3">
+                    <i class="fas fa-envelope fa-2x text-gradient"></i>
+                  </div>
+                  <div>
+                    <h5>Email</h5>
+                    <p class="text-muted">info@fitnation.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <div class="d-flex">
+                  <div class="me-3">
+                    <i class="fas fa-clock fa-2x text-gradient"></i>
+                  </div>
+                  <div>
+                    <h5>Hours</h5>
+                    <p class="text-muted">
+                      Mon-Fri: 5AM-11PM<br />Sat-Sun: 6AM-10PM
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Join Now Form -->
+          <div class="col-lg-6">
+            <h2 class="mb-4" id="join-form">Join Fit Nation Today</h2>
+
+            <!-- Alert Messages -->
+            <div id="formAlert" class="alert" style="display: none"></div>
+
+            <form id="joinForm" class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="fullName" class="form-label">Full Name *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                    required
+                  />
+                  <div class="invalid-feedback" id="nameError">
+                    Please enter your full name.
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email Address *</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                  <div class="invalid-feedback" id="emailError">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="phone" class="form-label">Phone Number *</label>
+                  <input type="tel" class="form-control" id="phone" required />
+                  <div class="invalid-feedback" id="phoneError">
+                    Please enter a valid 10-digit phone number.
+                  </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <label for="age" class="form-label">Age</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="age"
+                    min="16"
+                    max="80"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Membership Goal *</label>
+                <div class="row">
+                  <div class="col-md-6 mb-2">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="goal"
+                        id="weightLoss"
+                        value="Weight Loss"
+                        required
+                      />
+                      <label class="form-check-label" for="weightLoss">
+                        <i class="fas fa-weight text-success me-2"></i> Weight
+                        Loss
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-2">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="goal"
+                        id="muscleGain"
+                        value="Muscle Gain"
+                        required
+                      />
+                      <label class="form-check-label" for="muscleGain">
+                        <i class="fas fa-dumbbell text-gradient me-2"></i>
+                        Muscle Gain
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-2">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="goal"
+                        id="generalHealth"
+                        value="General Health"
+                        required
+                      />
+                      <label class="form-check-label" for="generalHealth">
+                        <i class="fas fa-heartbeat text-danger me-2"></i>
+                        General Health
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-2">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="goal"
+                        id="rehabilitation"
+                        value="Rehabilitation"
+                        required
+                      />
+                      <label class="form-check-label" for="rehabilitation">
+                        <i class="fas fa-user-md text-info me-2"></i>
+                        Rehabilitation
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="invalid-feedback d-block"
+                  id="goalError"
+                  style="display: none"
+                >
+                  Please select a membership goal.
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="membershipPlan" class="form-label"
+                  >Preferred Plan</label
+                >
+                <select class="form-select" id="membershipPlan">
+                  <option value="">Select a plan</option>
+                  <option value="basic">Basic ($29/month)</option>
+                  <option value="pro">Pro ($59/month)</option>
+                  <option value="elite">Elite ($99/month)</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label"
+                  >Additional Information</label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  placeholder="Any injuries, medical conditions, or specific goals we should know about?"
+                ></textarea>
+              </div>
+
+              <div class="mb-4 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="terms"
+                  required
+                />
+                <label class="form-check-label" for="terms">
+                  I agree to the
+                  <a href="#" class="text-gradient">Terms & Conditions</a> *
+                </label>
+                <div class="invalid-feedback" id="termsError">
+                  You must agree to the terms and conditions.
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg w-100">
+                <i class="fas fa-paper-plane me-2"></i> Submit Application
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="bg-light">
+      <div class="container">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p class="text-muted">Get answers to common questions</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    Do I need to be fit to join?
+                  </button>
+                </h2>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Not at all! We welcome all fitness levels. Our trainers will
+                    create a personalized plan based on your current fitness
+                    level and goals.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    What should I bring for my first visit?
+                  </button>
+                </h2>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Comfortable workout clothes, athletic shoes, a water bottle,
+                    and a towel.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    Can I cancel my membership?
+                  </button>
+                </h2>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes, you can cancel anytime with 30 days notice. No
+                    long-term contracts required.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div
+              class="card border-0"
+              style="background: linear-gradient(135deg, #ff0000, #ff4500)"
+            >
+              <div class="card-body p-4 text-white">
+                <h3 class="card-title mb-3">Free Trial Offer</h3>
+                <p class="card-text mb-4">
+                  New members get 3 free training sessions and a fitness
+                  assessment.
+                </p>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle me-2"></i> 1-on-1 consultation
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle me-2"></i> Body composition
+                    analysis
+                  </li>
+                  <li class="mb-2">
+                    <i class="fas fa-check-circle me-2"></i> Custom workout plan
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle me-2"></i> Nutrition guidance
+                  </li>
+                </ul>
+                <a href="#join-form" class="btn btn-light"
+                  >Claim Your Free Trial</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <!-- Logo and Description -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="footer-logo mb-3">
+              <h3>
+                <span class="fit">FIT</span><span class="nation">NATION</span>
+              </h3>
+            </div>
+            <p class="mb-4">
+              LET'S BUILD & BURN TOGETHER! Join thousands transforming their
+              lives at Fit Nation.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <!-- Opening Hours -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5>Opening Hours</h5>
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2">
+                <strong>Monday - Friday:</strong> 5:00 AM - 11:00 PM
+              </li>
+              <li class="mb-2">
+                <strong>Saturday:</strong> 6:00 AM - 10:00 PM
+              </li>
+              <li class="mb-2"><strong>Sunday:</strong> 7:00 AM - 9:00 PM</li>
+              <li><strong>24/7 Access:</strong> Elite Members</li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled mt-3">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="about.html">About Us</a></li>
+              <li class="mb-2">
+                <a href="services.html">Membership Plans</a>
+              </li>
+              <li class="mb-2">
+                <a href="classes.html">Class Schedule</a>
+              </li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="mt-4 mb-4" style="border-color: #444" />
+
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2024 Fit Nation. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>LET'S BUILD & BURN TOGETHER!</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Form Validation
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("joinForm");
+        const formAlert = document.getElementById("formAlert");
+
+        // Hide error messages initially
+        document.getElementById("goalError").style.display = "none";
+
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+
+          let isValid = true;
+
+          // Reset all validation states
+          form.querySelectorAll(".is-invalid").forEach((el) => {
+            el.classList.remove("is-invalid");
+          });
+          formAlert.style.display = "none";
+
+          // Validate Name
+          const name = document.getElementById("fullName").value.trim();
+          if (!name) {
+            document.getElementById("fullName").classList.add("is-invalid");
+            isValid = false;
+          }
+
+          // Validate Email
+          const email = document.getElementById("email").value.trim();
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!email || !emailRegex.test(email)) {
+            document.getElementById("email").classList.add("is-invalid");
+            isValid = false;
+          }
+
+          // Validate Phone
+          const phone = document.getElementById("phone").value.trim();
+          const phoneRegex = /^\d{10}$/;
+          const cleanPhone = phone.replace(/\D/g, "");
+          if (!phoneRegex.test(cleanPhone)) {
+            document.getElementById("phone").classList.add("is-invalid");
+            isValid = false;
+          }
+
+          // Validate Goal
+          const goalSelected = document.querySelector(
+            'input[name="goal"]:checked'
+          );
+          if (!goalSelected) {
+            document.getElementById("goalError").style.display = "block";
+            isValid = false;
+          } else {
+            document.getElementById("goalError").style.display = "none";
+          }
+
+          // Validate Terms
+          if (!document.getElementById("terms").checked) {
+            document.getElementById("terms").classList.add("is-invalid");
+            isValid = false;
+          }
+
+          // Show result
+          if (isValid) {
+            // Show success message
+            formAlert.className = "alert alert-success";
+            formAlert.innerHTML = `
+                        <i class="fas fa-check-circle me-2"></i>
+                        <strong>Inquiry Sent Successfully!</strong>
+                        <p class="mb-0 mt-2">Thank you ${name}! We'll contact you within 24 hours.</p>
+                    `;
+            formAlert.style.display = "block";
+
+            // Reset form
+            form.reset();
+
+            // Scroll to alert
+            formAlert.scrollIntoView({ behavior: "smooth" });
+          } else {
+            // Show error message
+            formAlert.className = "alert alert-danger";
+            formAlert.innerHTML = `
+                        <i class="fas fa-exclamation-circle me-2"></i>
+                        <strong>Please fix the errors above</strong>
+                        <p class="mb-0 mt-2">Some required fields are missing or contain invalid information.</p>
+                    `;
+            formAlert.style.display = "block";
+            formAlert.scrollIntoView({ behavior: "smooth" });
+          }
+
+          form.classList.add("was-validated");
+        });
+
+        // Real-time phone formatting
+        document
+          .getElementById("phone")
+          .addEventListener("input", function (e) {
+            let value = e.target.value.replace(/\D/g, "");
+            if (value.length > 10) value = value.substring(0, 10);
+
+            if (value.length > 3 && value.length <= 6) {
+              value = `(${value.substring(0, 3)}) ${value.substring(3)}`;
+            } else if (value.length > 6) {
+              value = `(${value.substring(0, 3)}) ${value.substring(
+                3,
+                6
+              )}-${value.substring(6)}`;
+            }
+
+            e.target.value = value;
+          });
+      });
+
+      // Load header and footer
+      fetch("includes/header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+
+      fetch("includes/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
